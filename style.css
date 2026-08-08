@@ -282,9 +282,11 @@ nav {
   position: absolute;
   top: 50%;
   left: 90%;
-  transform: translateY(-50%);
+  transform: translateY(100%);
   max-width: 550px;
   z-index: 3;
+  opacity: 0;
+  transition: opacity 300ms, transform 450ms ease;
 }
 
 .project__description--title,
@@ -293,4 +295,9 @@ nav {
 .project__description--link {
   text-align: left; 
   color: #fff;
+}
+
+.project:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
 }
