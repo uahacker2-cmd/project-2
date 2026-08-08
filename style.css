@@ -281,7 +281,7 @@ nav {
 .project__description {
   position: absolute;
   top: 50%;
-  left: 90%;
+  left: 90px;
   transform: translateY(100%);
   max-width: 550px;
   z-index: 3;
